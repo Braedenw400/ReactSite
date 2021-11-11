@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import Navbar from './components/Navbar'
-import footer from './components/footer'
+import Footer from './components/footer'
 import { mergeClasses } from '@material-ui/styles';
 const theme = createTheme({
   palette: {
@@ -34,7 +34,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <Navbar />
         <div classname={mergeClasses.bigSpace}>
-          <footer/>
+          <Footer />
         </div>
       </ThemeProvider>
     </div>

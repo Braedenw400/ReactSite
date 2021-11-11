@@ -8,15 +8,9 @@ const styles = makeStyles({
     bar:{
         paddingTop: "1.15rem",
         backgroundColor: "#fff",
-        ['@media (max-width:780px)']: {
-            flexDirection: "column"
-        }
     },
     logo: {
         width: "4%",
-        ['@media (max-width:780px)']: {
-            display: "none"
-        }
     },
     menuItem: {
         cursor: "pointer",
@@ -25,8 +19,6 @@ const styles = makeStyles({
         "&:hover": {
             color: "#4f25c8"
         },
-        ['@media (max-width:780px']: {
-            paddingBottom: "1rem"}
         },
     }
 )
@@ -35,7 +27,7 @@ function Navbar() {
     const classes = styles()
     return (
         <Toolbar position='sticky' color='rgba(0, 0, 9, 0.87)' className={classes.bar}>
-            <img src={logo} className={classes.logo} />
+            <img src={logo} alt="hamburger logo" className={classes.logo} />
             <Typography variant="h6" className={classes.menuItem}>
                 About
             </Typography>
